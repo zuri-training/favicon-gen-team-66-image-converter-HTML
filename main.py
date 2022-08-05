@@ -9,9 +9,9 @@ import zipfile
 
 #Specify icon sizes to convert and download as .ico 3 sizes
 icon_sizes = [(16, 16), (24, 24), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256 )]
-#There is need to automatically check & accept different file formats such as"jpg", "jpeg", "png", "bmp", "gif", "tiff", "webp"}
+#There is need to automatically check & accept different file formats such as".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp"
 #If there is an attempt to upload something else it show error
-ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", "gif", "tiff", "webp"}
+ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp"}
 # A function to check if the file is allowed
 
 def createHtml():
@@ -23,7 +23,7 @@ def createHtml():
 
     createHtml.close()
 
-file_path = input("Please enter the FILENAME you want to convert(sample.jpg, sample2.webp, sample4.gif, wings.png) or FILEPATH: ")
+file_path = input("Please enter the FILENAME you want to convert(sample1.jpg, sample2.png, sample3.webp, sample4.gif, sample5.bmp, sample6.tiff, sample7.jpeg) or FILEPATH: ")
 if os.path.isfile(file_path):
     file_extension = os.path.splitext(file_path)[1]
     if file_extension.lower() in ALLOWED_EXTENSIONS:
