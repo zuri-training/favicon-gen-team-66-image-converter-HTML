@@ -4,7 +4,7 @@ This project converts images to a .ico format in different sizes, along with gen
 This project supports the following file formats: 
 {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp"}
 
-#Before running the above code loclly, make sure to:
+#Before running the above code locally, make sure to:
 
 #1 pip install python
 
