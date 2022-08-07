@@ -1,6 +1,8 @@
 #NOTES:
 This project converts images to a .ico format in different sizes, along with generating the corresponding HTML <link tag codes manifest for a website's head
 
+The output is a zip file with the converted images of various sizes + html
+
 This project supports the following file formats: 
 {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp"}
 
